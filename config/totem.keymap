@@ -31,9 +31,11 @@
 / {
     combos {
         compatible = "zmk,combos";
+
     };
 
     macros {
+
     };
 
     keymap {
@@ -58,6 +60,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
+
            &kp Q       &kp W       &kp F        &kp P        &kp B          &kp J        &kp L            &kp U        &kp Y       &kp SEMI
            &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G          &kp M        &mt RSHFT N      &mt RCTRL E  &mt RALT I  &mt RGUI O
 &kp GRAVE  &kp Z       &kp X       &kp C        &kp D        &kp V          &kp K        &kp H            &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
@@ -163,6 +166,7 @@
         &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
 &trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
                                   &trans     &trans    &mo 4        &trans        &kp C_PP        &trans
+
             >;
         };
     };
