@@ -88,3 +88,7 @@ nice_view_spi: &spi0 {
     zephyr,display = &nice_view;
   };
 };
+
+&usbd {
+	status = "okay";
+};
