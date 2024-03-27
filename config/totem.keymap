@@ -62,7 +62,7 @@
                             &trans     &trans     &trans    &kt K_STOP  &kp C_PLAY_PAUSE  &kp K_MUTE
             >;
 
-            label = "media";
+            label = "MEDIA ";
         };
 
         nav_layer {
@@ -72,6 +72,8 @@
 &kt INSERT  &kp END   &trans       &kp DOWN_ARROW  &trans     &kp PAGE_DOWN    &trans  &none      &trans     &trans    &trans    &trans
                                    &trans          &trans     &trans           &mo 4   &trans     &trans
             >;
+
+            label = "NAV";
         };
 
         tbd {
@@ -90,6 +92,8 @@
 &trans  &trans            &kp N7  &kp N8  &kp N9  &kp MINUS            &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans    &trans    &trans
                                   &kp N0  &trans  &kp SPACE            &trans  &trans          &trans
             >;
+
+            label = "NUM";
         };
 
         sim_layer {
@@ -99,6 +103,8 @@
 &trans  &trans          &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp MINUS          &trans  &trans           &trans             &trans         &trans         &trans
                                          &kp RIGHT_PARENTHESIS  &trans                &mo 4              &trans  &trans           &trans
             >;
+
+            label = "SYMBOL";
         };
 
         adjust_layer {
@@ -108,6 +114,8 @@
 &bt BT_CLR  &out OUT_TOG  &bt BT_PRV    &trans        &trans        &trans          &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
             >;
+
+            label = "CONF";
         };
     };
 };
