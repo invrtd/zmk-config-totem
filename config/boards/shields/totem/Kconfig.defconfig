@@ -16,7 +16,7 @@ if SHIELD_TOTEM_LEFT || SHIELD_TOTEM_RIGHT
 config ZMK_SPLIT
     default y
  
-
+/*
 config ZMK_DISPLAY
 	select LV_FONT_MONTSERRAT_26
 
@@ -44,5 +44,5 @@ config LV_Z_VDB_SIZE
 	default 16
 
 endif # ZMK_DISPLAY
-
+*/
 endif
