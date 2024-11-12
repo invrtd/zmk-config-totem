@@ -10,10 +10,10 @@
 / {
     chosen {
 		zmk,physical-layout = &default_layout;
-		zmk,studio-rpc-uart = &uart1;
+        zmk,kscan = &kscan0;
     };
 
-    default_transform: default_transform {
+    default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <4>;
@@ -30,7 +30,7 @@
     };
 
 
-    kscan0: kscan {
+    kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         
         diode-direction = "col2row"; 
@@ -42,14 +42,11 @@
             ;
     };
 
-    	default_layout: default_layout {
-		compatible = "zmk,physical-layout";
-		display-name = "Default";
-		
-		transform = <&default_transform>;
-		kscan = <&kscan0>;
-		
-		keys
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Totem";
+        transform = <&default_transform>;
+        keys
 			= <&key_physical_attrs 100 100 100  0 0 0 0>
 			, <&key_physical_attrs 100 100 200  0 0 0 0>
 			, <&key_physical_attrs 100 100 300  0 0 0 0>
@@ -92,7 +89,7 @@
 			, <&key_physical_attrs 100 100 800  300 0 0 0>            
 			, <&key_physical_attrs 100 100 900  300 0 0 0>
 			;
-	};
+    };
 };
 
 &pinctrl {
@@ -143,3 +140,5 @@ nice_view_spi: &spi0 {
 &usbd {
 	status = "okay";
 };
+
+&xiao_serial { status = "disabled"; };
