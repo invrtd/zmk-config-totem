@@ -3,13 +3,13 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: my_fork
-      url-base: https://github.com/invrtd/zmk.git 
+      url-base: https://github.com/invrtd/
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-      - name: fork
+    - name: zmk_fork
       remote: my_fork
       revision: nice!view-180
       import: app/west.yml
