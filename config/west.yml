@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-      - name: fork
+    - name: zmk
       remote: my_fork
       revision: nice!view-180
       import: app/west.yml
